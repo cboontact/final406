@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,13 +8,27 @@
   <!-- favicon นักพัฒนา (</>) -->
   <link rel="icon" type="image/svg+xml"
         href="https://api.iconify.design/lucide/code.svg">
+  <style>
+    html, body { height: 100%; margin: 0; }
+    object#app {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      overflow: hidden;
+    }
+  </style>
 </head>
 
 <body>
-  <iframe
-    sandbox="allow-scripts allow-forms allow-same-origin"
-    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
-    src="https://script.google.com/macros/s/AKfycbzeZEX9fNTmz6kHQ1VgIScMzZSR_FarvS5KmXfMU2fvnZrnJ5N1lwyErF9V39J23l0h/exec">
-  </iframe>
+  <!-- ใช้ object แทน iframe -->
+  <object
+    id="app"
+    type="text/html"
+    data="https://script.google.com/macros/s/AKfycbzeZEX9fNTmz6kHQ1VgIScMzZSR_FarvS5KmXfMU2fvnZrnJ5N1lwyErF9V39J23l0h/exec?embed=1">
+  </object>
+
+  <noscript>กรุณาเปิดใช้งาน JavaScript เพื่อใช้งานระบบสอบออนไลน์</noscript>
 </body>
 </html>
